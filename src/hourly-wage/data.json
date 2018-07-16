@@ -1,0 +1,4 @@
+{
+    "$class": "org.dianalease.hourlywage.Request",
+    "input": "World"
+}

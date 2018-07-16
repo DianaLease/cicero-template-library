@@ -1,0 +1,8 @@
+{
+    "name": "hourly-wage",
+    "version": "0.0.0",
+    "description": "Template to calculate earned wages",
+    "engines": {
+      "cicero": "^0.2.54"
+    }
+  }

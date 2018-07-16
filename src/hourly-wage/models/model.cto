@@ -1,0 +1,23 @@
+namespace org.dianalease.hourlywage
+
+import org.accordproject.money.MonetaryAmount from https://models.accordproject.org/money.cto
+
+
+transaction Request {
+  o DateTime timeIn
+  o DateTime timeOut
+}
+
+transaction Response {
+  o Double amountDue
+}
+
+/**
+ * The template model
+ */
+@AccordTemplateModel("hourly-wage")
+transaction TemplateModel { // TODO (DCS) this should be a concept, but blocked by https://github.com/hyperledger/composer/issues/2472
+  o String employee
+  o String employer
+  o MonetaryAmount hourlyWage
+}
